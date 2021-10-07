@@ -1,6 +1,69 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-	<head>
-		<title>tareaxd</title>
-	</head>
+    <head>
+        <title>Pagos</title>
+        <script>
+        function validar ()
+            {
+            Producto1 = document.getElementById("P1").checked;
+            Producto2 = document.getElementById("P2").checked;
+            Producto3 = document.getElementById("P3").checked;
+
+            Cantidad=document.getElementById("cantidad").value;
+            Total=(Producto1+Producto2+Producto3)*Cantidad;
+            }
+        function decidir ()
+        {
+            Producto1 = document.getElementById("P1").checked;
+            Producto2 = document.getElementById("P2").checked;
+            Producto3 = document.getElementById("P3").checked;
+            if (document.getElementById("P2").checked =true){
+                valorP1=1000;
+                valorP2=0;
+                valorP3=0;
+
+            }
+            else if (document.getElementById("P2").checked =true){
+                valorP1=0;
+                valorP2=500;
+                valorP3=0;
+            }
+            else if (document.getElementById("P3").checked = true){
+                valorP1=0;
+                valorP2=0;
+                valorP3=100;
+            }
+            else {
+                valorP1=0;
+                valorP2=0;
+                valorP3=0;
+            }
+            valorP=valorP1+valorP2+valorP3;
+            document.getElementById("precio").innerHTML = valorP;
+            //return valorP;
+        }
+        document.getElementById
+        </script>
+    </head>
+    
+    <body>
+        <h1>Sección de pago</h1>
+        <form name="pago" method="GET" id="pago" oninput="x.value=parseInt(P1.value)+parseInt(P2.value)+parseInt(P3.value)">
+            <label>Productos:</label>
+            <input type="radio" name="producto" value="P1" id="P1">Balayage
+            <input type="radio" name="producto" value="P2" id="P2">Baby Lights
+            <input type="radio" name="producto" value="P3" id="P3">Nanoplastia<br><br>
+            
+            <label>Precio = </label><p id="precio"></p>
+            <button type="button" onclick="decidir()">Agregar</button><br><br>
+            
+            <label>Cantidad</label>&nbsp;<input type="number" name="cantidad" id="cantidad"><br><br>
+
+            <label>Total:</label>&nbsp;<output id="total" name=""></output><br><br>
+
+            <input type="button" value="Pagar" onclick="pagar ();">
+            <input type="reset" value="Borrar">
+            <input type="submit" name="Enviar" value="enviar">
+        </form>
+    </body>
 </html>
