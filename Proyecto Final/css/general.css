@@ -1,70 +1,11 @@
-.body{
-  background-color: hsl(0,100%, 90%);
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
 }
-.encabezado{
-    text-align: center;
-    transform: translate(-0.6%,-22%);
-    height:3vh; width: 100vw;
-    background-color: hsl(0, 0%, 100%);
-    padding-top: 6px;
-    padding-bottom: 6px;
-}
-.acomodoEncabezado{
-    text-align: left;
-    transform: translate(-1%,-82%);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-.centerImg{
-    transform: translate(0%,-84%);
-}
-.redes-container{ /*Contenedor de redes sociales y ubicación*/
-    display: flex;
-    justify-content: right;
-    transform: translate(-2%,-275%);
-}
-:root{
-    --facebook: #3b5999;
-    --instagram: #e4405f;
-}
-.redes-container ul li{ /*Espaciamiento entre los símbolos*/
-    display: inline-block;
-    margin: 0 25px; /*Separación entreja cajas corresponde al segundo valor, primer valor separación de x desde abajo*/
-    width: 10px;
-    height: 50px;
-}
-.redes-container ul li a{
-    /*display: block;*/
-    padding: 3px 10px; /*Tamaño cajita negra x,y*/
-    background-color: #333; /*Color negro de la caja*/
-    color: #fff; /*Color blanco que después será cambiado*/
-    font-size: 18px; /*Tamaño del símbolo*/
-    box-shadow: 0 4px 5px 0px rgba(0,0,0,.2); /*Sombreado de las cajas*/
-    transition: .2s;
-}
-.redes-container ul:hover a{
-    filter: blur(2px); /*Efecto de difuminado*/
-}
-.redes-container ul li a:hover{ /*Efecto de movimiento*/
-    transform: translateY(-3px) scale(1.05);
-    box-shadow: 0 5px 5px 0px rgba(0,0,0,.4); 
-    filter: none;
-}
-.redes-container ul li .facebook:hover{ /*Cambio de color facebook e instagram*/
-    background-color: var(--facebook);
-}
-.redes-container ul li .instagram:hover{
-    background-color: var(--instagram);
-}
-.acomodoDescripcionTexto{
-    transform: translate(1%,-50%);
-}
-#acomodoDescripcionArribaFondoNegro{
-    transform: translate(1%,-860%);
-}
-.maps{
-    height:10vh; width: 100vw;
-}
-.footer{
-    height:10vh; width: 100vw;
 
+body{
+  background-color:#edbfdc;
 }
