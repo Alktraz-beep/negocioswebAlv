@@ -5,23 +5,42 @@
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <link rel=stylesheet href="css/estiloInicio.css">
         <link rel=stylesheet href="css/all.css">
+        <link rel="stylesheet" href="css/navbar.css">
+        <link rel="stylesheet" href="css/footer.css">
         <link rel="stylesheet" href="css/estilos.css">
         <link rel="stylesheet" href="css/general.css">
         
 </head>
     <body class="body">
         
-        <div class="encabezado">
-            <h4 class="acomodoEncabezado">&nbsp;&nbsp;Inicio &nbsp; Ubicación &nbsp; Servicios &nbsp; Citas </h4>
-            <img src="img/salon.png" class="centerImg" alt="Logo del salón" width="150px" height="150px">
-            <div class="redes-container"> 
-                <ul> 
-                    <li><a href="https://www.facebook.com/idstudio.oficial/" class="facebook" target="blank"><i class="fab fa-facebook-f"></i></a> </li> 
-                    <li><a href="https://www.instagram.com/idstudio.oficial/" class="instagram" target="blank"><i class="fab fa-instagram"></i></a> </li> 
+      <header>
+        <nav>
+    
+          <div class="container-nav">        
+            
+            <a href="/inicio.html"><img class="logo" src="img/salon.png" alt="ID STUDIO"></a>
+            
+            <div class="menu">  
+              <a href="/inicio.html"> Inicio </a> 
+              <a href="/servicios.html"> Servicios </a> 
+              <a href=""> Citas </a> 
+              <a href=""> Conocenos </a>
+            </div>  
+    
+            
+            <!-- Símbolo para pantallas pequeñas -->
+            <button class="hamburguer">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+    
+          </div>
+    
+        </nav>
+      </header>
 
-                </ul>
-            </div>
-        </div>
+
         <div class="container">
             <div class="wrapper">
     
@@ -85,6 +104,12 @@
         <br><br><br>
         <div class="maps">Maps</div>
         
-        <div id="footer"><hr> footer <br></div>
+        <footer>
+          <div class="container-footer">
+            <a href="https://www.facebook.com/idstudio.oficial/" target="_blank"><img class="icon" src="/img/facebook_icono.png" alt="FB"></a>
+            <a href="https://www.instagram.com/idstudio.oficial/" target="_blank"><img class="icon" src="/img/instagram_icono.png" alt="IG"></a>
+          </div>
+            
+        </footer>
     </body>
 </html>
