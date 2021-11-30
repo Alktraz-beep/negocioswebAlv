@@ -11,6 +11,29 @@
   grid-template-columns: auto auto ;
   /*background-color: #2196F3;*/
   padding: 10px;
+  margin-bottom: 50px;
+}
+
+.grid-container-tratamientos{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  /*background-color: #2196F3;*/
+  padding: 10px;
+  margin-bottom: 50px;
+}
+
+.grid-container-img{
+  display: grid;
+  grid-template-columns: auto;
+  padding: 10px;
+}
+
+.grid-container-size{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  background-color: #ffffff;
+  padding: 10px;
+  margin-bottom: 50px;
 }
 
 .grid-item{
@@ -42,6 +65,11 @@
   height: 200px;
   width: 100%;
 }
+
+.balayage-img{
+  height: 300px;
+  width: 300px;
+}
 /* Add some padding inside the card container */
 .container-card {
   display: inline-block;
@@ -50,15 +78,22 @@
   padding: 2px 16px;
 }
 
-h1, h2, h3, h4, p{
+.grid-item,.block, h1, h2, h3, h4,h5, h6, p{
   font-family: 'Raleway',sans-serif;
 }
-p{
+.block, p{
   font-weight: 300;
 }
-
+h1,h2,h3,h4,h5,h6{
+  font-weight: 500;
+}
 .desc-servicios{
   display: block;
   position: relative;
   margin-top: 10%;
+}
+
+.block{
+  display: block;
+
 }
