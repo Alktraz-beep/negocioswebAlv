@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/estilos.css">
-    <script src="js/funCitas.js"> </script>
+    
 </head>
 <body>
 <body class="body">
@@ -58,14 +58,15 @@
                 <span class="step"></span>
                 <span class="step"></span>
                 <span class="step"></span>
-                <span class="step"></span>
             </div>
             <!--AQUI EMPIEZA EL FORMULARIO: -->
             <!--PASO1:Selecciona un servicio -->
+            <div id="div-advertencia" class="notification is-danger" style="text-align:center;display:none;"></div>
             <div id="div-paso1" class="tab">
+                
                 <h1 style="font-family:Raleway;text-align:center;font-weight: bold;">Selecciona el servicio y añadelo</h1>
                 <div style="text-align:center;" id="div-centrador">
-                    <select name="servicio" id="servicioSelect"  onmousedown="if(this.options.length>10){this.size=10;}" onchange='this.size=0;' onblur="this.size=0;" >
+                    <select name="servicio" id="servicioSelect" class="servicioSelect"  onmousedown="if(this.options.length>10){this.size=10;}" onchange='this.size=0;' onblur="this.size=0;" style="border-radius:5px;border-color:transparent;">
                         <option value="default">Selecciona un servicio</option>
                         <optgroup label="UÑAS">
                             <option value="manicure">Manicure</option>
@@ -142,33 +143,110 @@
                 </div>
             </div>
             <!--PASO2:Elegir dia-->
-            <div class="tab">
+            <div id="div-paso2" class="tab">
+                <h1 style="font-family:Raleway;text-align:center;font-weight: bold;">Selecciona el horario</h1>
+                <div style="display:grid;grid-template-columns:20% auto auto 20%">
+                    <div></div>
+                    <strong style="text-align: center;">Hora</strong>
+                    <strong style="text-align: center;">Fecha</strong>
+                    <div></div>
 
+                    <div></div>
+                    <input type="time" name="" id="horarioInput" class="input">
+                    <input type="date" name="hora" id="hora" class="input">
+                    <div></div>
+                </div>
             </div>
             <!--PASO3:Elegir datos-->
-            <div class="tab">
+            <div id="div-paso3" class="tab">
+                <h1 style="font-family:Raleway;text-align:center;font-weight: bold;">Llena tus datos</h1>
+                <div style="display: grid;grid-template-columns:30% auto 30%; text-align:center;">
+                    <div></div>
+                    <div style="font-family:Raleway;font-weight:bold;font-size:x-large">Nombre</div>
+                    <div></div>
 
+                    <div></div>
+                    <input type="text" class="input" id="nombre" placeholder="Nombre">
+                    <div></div>
+
+                    <div></div>
+                    <div style="font-family:Raleway;font-weight:bold;font-size:x-large">Apellido Paterno</div>
+                    <div></div>
+
+                    <div></div>
+                    <input type="text" class="input" id="paterno" placeholder="Apellido Paterno">
+                    <div></div>
+
+                    <div></div>
+                    <div style="font-family:Raleway;font-weight:bold;font-size:x-large">Apellido Materno</div>
+                    <div></div>
+
+                    <div></div>
+                    <input type="text" class="input" id="materno" placeholder="Apellido Materno">
+                    <div></div>
+
+                    <div></div>
+                    <div style="font-family:Raleway;font-weight:bold;font-size:x-large">Email</div>
+                    <div></div>
+
+                    <div></div>
+                    <input type="text" class="input" id="email" placeholder="idstudio@email.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$">
+                    <div></div>
+
+                    <div></div>
+                    <div style="font-family:Raleway;font-weight:bold;font-size:x-large">Teléfono</div>
+                    <div></div>
+
+                    <div></div>
+                    <input type="text" class="input" id="tel" placeholder="Teléfono">
+                    <div></div>
+
+                    <div></div>
+                    <div style="font-family:Raleway;font-weight:bold;font-size:x-large">Fecha de nacimiento</div>
+                    <div></div>
+
+                    <div></div>
+                    <input type="date" class="input" id="fechaN">
+                    <div></div>
+                </div>
             </div>
             <!--Botones-->
             <div style="overflow:auto;">
                 <div style="float:right;">
-                    <button type="button" id="prevBtn" class="btn">Anterior</button>
-                    <button type="button" id="nextBtn" class="btn">Siguiente</button>
+                    <button type="button" id="prevBtn" class="btn" onclick="siguienteAnterior(-1)">Anterior</button>
+                    <button type="button" id="nextBtn" class="btn" onclick="siguienteAnterior(1)">Siguiente</button>
                 </div>
             </div>
+            <br>
+            <br>
+            <br>
         </form>
         <div></div>
     </div>
     <footer>
           <div class="container-footer">
-            <a href="https://www.facebook.com/idstudio.oficial/" target="_blank"><img class="icon" src="/img/facebook_icono.png" alt="FB"></a>
-            <a href="https://www.instagram.com/idstudio.oficial/" target="_blank"><img class="icon" src="/img/instagram_icono.png" alt="IG"></a>
+            <a href="https://www.facebook.com/idstudio.oficial/" target="_blank"><img class="icon" src="./img/facebook_icono.png" alt="FB"></a>
+            <a href="https://www.instagram.com/idstudio.oficial/" target="_blank"><img class="icon" src="./img/instagram_icono.png" alt="IG"></a>
           </div>
     </footer>
-
+    <script src="js/funCitas.js"> </script>
     <script>
-        var currenttab=0;
-        showTab(currenttab);
+        
+        var today = new Date();
+        var dd = today.getDate();
+        var mm = today.getMonth() + 1; //January is 0!
+        var yyyy = today.getFullYear();
+
+        if (dd < 10) {
+        dd = '0' + dd;
+        }
+
+        if (mm < 10) {
+        mm = '0' + mm;
+        } 
+            
+        today = yyyy + '-' + mm + '-' + dd;
+        document.getElementById("hora").setAttribute("min", today);
     </script>
     
 </body>
