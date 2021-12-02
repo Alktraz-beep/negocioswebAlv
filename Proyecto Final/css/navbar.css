@@ -66,10 +66,30 @@ nav{
 }
 
 @media (min-width: 768px){
-  .hamburguer{
+  .hamburguer, .menu-toggle{
     display: none;
   }
+
   .menu{
     display: flex;
   }
+}
+
+@media (max-width: 767px){
+  .menu-toggle{
+    display: none;
+  }
+}
+
+.menu-toggle a{
+  display: block;
+  margin: 0 16px;
+  font-family: 'Raleway', sans-serif;
+  color: black;
+  border-radius: 99px;
+}
+
+.menu-toggle a:hover{
+  background-color: #EED7CE;
+  transition: 0.5s;
 }
