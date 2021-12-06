@@ -1,6 +1,6 @@
 <?php
 ?>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;1,100;1,300&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" href="css/general.css">
     <link rel=stylesheet href="css/all.css">
     <link rel="stylesheet" href="css/estiloCitas.css">
     <link rel="stylesheet" href="css/navbar.css">
@@ -26,12 +26,12 @@
     
           <div class="container-nav">        
             
-            <a href="/negocioswebAlv/IDStudio/inicio.html"><img class="logo" src="img/salon.png" alt="ID STUDIO"></a>
+            <a href="./inicio.html"><img class="logo" src="img/salon.png" alt="ID STUDIO"></a>
             
             <div class="menu">  
-              <a href="/negocioswebAlv/IDStudio/inicio.html"> Inicio </a> 
-              <a href="/negocioswebAlv/IDStudio/servicios.html"> Servicios </a> 
-              <a href="/negocioswebAlv/IDStudio/citas.php"> Citas </a> 
+              <a href="./inicio.html"> Inicio </a> 
+              <a href="./servicios.html"> Servicios </a> 
+              <a href="./citas.php"> Citas </a> 
               <a href=""> Conócenos </a>
             </div>  
     
@@ -51,7 +51,7 @@
     <br>
     <div id="contenedor-citas" class="contenedor-citas">
         <div></div>
-        <form id="formCitas" action="" >
+        <form id="formCitas" action="" method="get" >
             <!-- Circulos que indican la etapa -->
             <div style="text-align:center;margin-top:40px;">
                 <span class="step"></span>
@@ -146,8 +146,8 @@
                 <h1 style="font-family:Raleway;text-align:center;font-weight: bold;">Selecciona el horario</h1>
                 <div style="display:grid;grid-template-columns:20% auto auto 20%">
                     <div></div>
-                    <strong style="text-align: center;">Hora</strong>
-                    <strong style="text-align: center;">Fecha</strong>
+                    <strong style="text-align: center;font-family:'Raleway'">Hora</strong>
+                    <strong style="text-align: center;font-family:'Raleway'">Fecha</strong>
                     <div></div>
 
                     <div></div>
@@ -161,7 +161,7 @@
                 <h1 style="font-family:Raleway;text-align:center;font-weight: bold;">Llena tus datos</h1>
                 <div style="display: grid;grid-template-columns:30% auto 30%; text-align:center;">
                     <div></div>
-                    <div style="font-family:Raleway;font-weight:bold;font-size:x-large">Nombre</div>
+                    <div style="font-family:Raleway;font-weight:bold;font-size:x-large" >Nombre</div>
                     <div></div>
 
                     <div></div>

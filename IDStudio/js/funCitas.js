@@ -64,12 +64,31 @@ function siguienteAnterior(n){
   currenttab = currenttab + n;
   if (currenttab >= x.length) {
     //...the form gets submitted:
-    document.getElementById("formCitas").submit();
+    
+    window.location="./ticket.php/?servicios="+obtenerServicios()+"&horario="+obtenerHorario()+"&nombre="+document.getElementById("nombre").value+"&paterno="+document.getElementById("paterno").value+"&materno="+document.getElementById("materno").value+"&email="+document.getElementById("email").value+"&tel="+document.getElementById("tel").value+"&fecha="+document.getElementById("fechaN").value;
     return false;
   }
   // Otherwise, display the correct tab:
   showTab(currenttab);
 } 
+//funcion que obtiene los nombres de los servicios en texto concatenado
+function obtenerServicios(){
+    const lista=document.getElementById("div-lista");
+    
+    var servicios="";
+    for(var i=0;i<lista.childElementCount;i++){
+      if(lista.children[i].innerHTML!="" && lista.children[i].innerHTML!="-")
+        servicios+=lista.children[i].innerHTML+"-";
+    }
+    
+    return servicios;
+}
+//obtener horario
+function obtenerHorario(){
+  var horario="Hora: ";
+  horario+=document.getElementById("horarioInput").value+" Fecha: "+document.getElementById("hora").value;
+  return horario;
+}
 //funcion que valida si una etapa esta completa
 function validarPaso(){
   var valido=true;
