@@ -8,45 +8,45 @@
     <title>ID STUDIO</title>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="icon" href="./Images/salon.jpeg">
-    <link rel="stylesheet" href="css/estiloCitas.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;1,100;1,300&display=swap" rel="stylesheet">
+    
     <link rel=stylesheet href="css/all.css">
+    <link rel="stylesheet" href="css/estiloCitas.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/estilos.css">
+
     
 </head>
 <body class="body">
         
-        <header>
-          <nav>
-      
-            <div class="container-nav">        
-              
-              <a href="/inicio.html"><img class="logo" src="img/salon.png" alt="ID STUDIO"></a>
-              
-              <div class="menu">  
-                <a href="/inicio.html"> Inicio </a> 
-                <a href="/servicios.html"> Servicios </a> 
-                <a href=""> Citas </a> 
-                <a href=""> Conocenos </a>
-              </div>  
-      
-              
-              <!-- Símbolo para pantallas pequeñas -->
-              <button class="hamburguer">
-                <span></span>
-                <span></span>
-                <span></span>
-              </button>
-      
-            </div>
-      
-          </nav>
-        </header>
-        
+  <header>
+        <nav>
+    
+          <div class="container-nav">        
+            
+            <a href="/negocioswebAlv/IDStudio/inicio.html"><img class="logo" src="img/salon.png" alt="ID STUDIO"></a>
+            
+            <div class="menu">  
+              <a href="/negocioswebAlv/IDStudio/inicio.html"> Inicio </a> 
+              <a href="/negocioswebAlv/IDStudio/servicios.html"> Servicios </a> 
+              <a href="/negocioswebAlv/IDStudio/citas.php"> Citas </a> 
+              <a href=""> Conócenos </a>
+            </div>  
+    
+            
+            <!-- Símbolo para pantallas pequeñas -->
+            <button class="hamburguer">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+    
+          </div>
+    
+        </nav>
+  </header>
     <br>
     <br>
     <div id="contenedor-citas" class="contenedor-citas">
