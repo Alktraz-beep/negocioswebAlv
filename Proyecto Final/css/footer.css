@@ -3,7 +3,12 @@ footer{
     left: 0;
     bottom: 0;
     width: 100%;
+<<<<<<< HEAD
     background-color: #ffffff;
+=======
+    max-height: 100px;
+    background-color: #d0c8bb;
+>>>>>>> juan-carlos
     color: black;
     text-align: right;
 }
@@ -16,7 +21,52 @@ footer{
   justify-content: right;
 }
 
+<<<<<<< HEAD
 .icon{
   width: 90%;
   padding: 8px 8px;
+=======
+/*.icon{
+  width: 90%;
+  padding: 8px 8px;
+}*/
+
+.redes-container{ /*Contenedor de redes sociales y ubicación*/
+  vertical-align: middle;
+  transform: translate(-4%,25%);
+
+}
+:root{
+  --facebook: #3b5999;
+  --instagram: #e4405f;
+}
+.redes-container ul li{ /*Espaciamiento entre los símbolos*/
+  display: inline-block;
+  margin: 0 25px; /*Separación entreja cajas corresponde al segundo valor, primer valor separación de x desde abajo*/
+  width: 10px;
+  height: 50px;
+}
+.redes-container ul li a{
+  /*display: block;*/
+  padding: 3px 10px; /*Tamaño cajita negra x,y*/
+  background-color: #333; /*Color negro de la caja*/
+  color: #fff; /*Color blanco que después será cambiado*/
+  font-size: 18px; /*Tamaño del símbolo*/
+  box-shadow: 0 4px 5px 0px rgba(0,0,0,.2); /*Sombreado de las cajas*/
+  transition: .2s;
+}
+.redes-container ul:hover a{
+  filter: blur(2px); /*Efecto de difuminado*/
+}
+.redes-container ul li a:hover{ /*Efecto de movimiento*/
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 5px 5px 0px rgba(0,0,0,.4); 
+  filter: none;
+}
+.redes-container ul li .facebook:hover{ /*Cambio de color facebook e instagram*/
+  background-color: var(--facebook);
+}
+.redes-container ul li .instagram:hover{
+  background-color: var(--instagram);
+>>>>>>> juan-carlos
 }
