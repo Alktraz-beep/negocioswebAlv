@@ -1,6 +1,6 @@
 create database idstudio;
 
-use istudio;
+use idstudio;
 
 create table servicio(
   servicio_id int auto_increment primary key,
