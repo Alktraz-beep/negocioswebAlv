@@ -1,22 +1,10 @@
 <?php
-<<<<<<< HEAD
     $conexion = mysql_connect("localhost", "root", "12345678");
     if (! $conexion) { dispError(); exit(); }
     echo "Cnx = $conexion <br>";
         
     # mysql_select_db('NE221', $db_cnx);    # nombre de la BD
     mysql_select_db('idstudio', $conexion);
-=======
-$conexion = mysql_connect("localhost", "root", "12345678");
-if (! $conexion) { dispError(); exit(); }
-echo "Cnx = $conexion <br>";
-    
-# mysql_select_db('NE221', $db_cnx);    # nombre de la BD
-mysql_select_db('idstudio', $conexion);
-echo "conectado a DB= " . dispError() . "<br>" ;
-
-
->>>>>>> 9c0fc3a65b25ad81f07c6ca7e07ef477ef3273cc
     //aqui se obtienen las variaables del get todos pueden ser tipo text
     $servicios=$_GET['servicios'];  
     $horario=$_GET['horario'];
