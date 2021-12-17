@@ -65,7 +65,7 @@ function siguienteAnterior(n){
   if (currenttab >= x.length) {
     //...the form gets submitted:
     
-    window.location="./ticket.php/?servicios="+obtenerServicios()+"&horario="+obtenerHorario()+"&nombre="+document.getElementById("nombre").value+"&paterno="+document.getElementById("paterno").value+"&materno="+document.getElementById("materno").value+"&email="+document.getElementById("email").value+"&tel="+document.getElementById("tel").value+"&fecha="+document.getElementById("fechaN").value;
+    window.location="./citas.php/?servicios="+obtenerServicios()+"&horario="+obtenerHorario()+"&nombre="+document.getElementById("nombre").value+"&paterno="+document.getElementById("paterno").value+"&materno="+document.getElementById("materno").value+"&email="+document.getElementById("email").value+"&tel="+document.getElementById("tel").value+"&fecha="+document.getElementById("fechaN").value;
     return false;
   }
   // Otherwise, display the correct tab:
