@@ -16,7 +16,7 @@ create table cita(
   email varchar(100),
   tel varchar(100),
   fecha_nac date,
-  horario time
+  horario varchar(100)
 );
 
 create table servicio_cita(
