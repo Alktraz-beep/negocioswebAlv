@@ -26,13 +26,13 @@
     
           <div class="container-nav">        
             
-            <a href="./inicio.html"><img class="logo" src="img/salon.png" alt="ID STUDIO"></a>
+            <a href="./index.html"><img class="logo" src="img/salon.png" alt="ID STUDIO"></a>
             
             <div class="menu">  
-              <a href="./inicio.html"> Inicio </a> 
+              <a href="./index.html"> Inicio </a> 
               <a href="./servicios.html"> Servicios </a> 
               <a href="./citas.php"> Citas </a> 
-              <a href=""> Conócenos </a>
+
             </div>  
     
             
@@ -225,6 +225,7 @@
     
     <footer>
           <div class="container-footer">
+          Alvarez Loran Juan Pablo, Díaz Valenzuela Juan Carlos, Ramírez Viramontes Josue Yafte
           <div class="redes-container">
                     <ul> 
                         <li><a href="https://www.facebook.com/idstudio.oficial/" class="facebook" target="blank"><i class="fab fa-facebook-f"></i></a> </li> 
